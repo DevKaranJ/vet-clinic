@@ -1,6 +1,6 @@
 # Vet Clinic Database
 
-> This repository contains SQL files for creating and managing a database for a vet clinic.
+
 
 This repository includes SQL files that can be used to set up and manage a database for a vet clinic:
 
@@ -22,11 +22,6 @@ This repository includes SQL files that can be used to set up and manage a datab
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -39,7 +34,6 @@ This repository includes SQL files that can be used to set up and manage a datab
 
 ## 📖 About the Project <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Vet Clinic Database]** is a project that creates a database to store information about animals in a vet clinic.
 
@@ -48,7 +42,6 @@ This repository includes SQL files that can be used to set up and manage a datab
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -75,7 +68,6 @@ This repository includes SQL files that can be used to set up and manage a datab
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **Creation of a Vet Clinic Database**: The project creates a database for a vet clinic with tables for animal information.
 - **Data Population**: Sample data is provided to populate the database tables.
@@ -88,8 +80,6 @@ This repository includes SQL files that can be used to set up and manage a datab
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 No live demo is available for this project as it's a database project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -98,7 +88,6 @@ No live demo is available for this project as it's a database project.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -141,9 +130,6 @@ git clone https://github.com/devkaranj/vet-clinic.git
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-
 👤 **Karan Joshi**
 
 - GitHub: [@githubhandle](https://github.com/DevKaranJ)
@@ -157,7 +143,6 @@ git clone https://github.com/devkaranj/vet-clinic.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 Here are some future features we plan to add to the Vet Clinic Database:
 
@@ -184,8 +169,6 @@ Feel free to check the [issues page](https://github.com/DevKaranJ/vet-clinic/iss
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you find this project helpful or interesting, please consider giving it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -194,9 +177,7 @@ If you find this project helpful or interesting, please consider giving it a sta
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank Microverse to giving me this opportunity to present my self as a Web Devloper.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,7 +185,6 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How do I reset the database to its initial state?]**
 
