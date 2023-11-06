@@ -1,14 +1,6 @@
 # Vet Clinic Database
 
 
-
-This repository includes SQL files that can be used to set up and manage a database for a vet clinic:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on the database.
-
-
 <a name="readme-top"></a>
 
 
@@ -203,7 +195,3 @@ I would like to thank Microverse to giving me this opportunity to present my sel
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
