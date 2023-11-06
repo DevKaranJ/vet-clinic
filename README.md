@@ -1,14 +1,5 @@
 # Vet Clinic Database
 
-
-
-This repository includes SQL files that can be used to set up and manage a database for a vet clinic:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on the database.
-
-
 <a name="readme-top"></a>
 
 
@@ -41,21 +32,6 @@ This repository includes SQL files that can be used to set up and manage a datab
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
