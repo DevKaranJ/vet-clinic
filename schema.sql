@@ -63,3 +63,28 @@ ALTER COLUMN id SET DEFAULT nextval('animals_id_seq');
 -- Finally, set the 'id' column as the primary key
 ALTER TABLE animals
 ADD PRIMARY KEY (id);
+
+-- Create the vets table
+CREATE TABLE vets (
+    id serial PRIMARY KEY,
+    name varchar(255),
+    age integer,
+    date_of_graduation date
+);
+
+-- Create the specializations table
+CREATE TABLE specializations (
+    vet_id integer,
+    species varchar(255),
+    FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
+
+-- Create the visits table
+CREATE TABLE visits (
+    animal varchar(255),
+    vet_id integer,
+    visit_date date,
+    FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
+
+
