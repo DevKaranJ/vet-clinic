@@ -75,8 +75,9 @@ CREATE TABLE vets (
 -- Create the specializations table
 CREATE TABLE specializations (
     vet_id integer,
-    species varchar(255),
-    FOREIGN KEY (vet_id) REFERENCES vets(id)
+    species_id integer, -- Add a foreign key reference to the species table
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (species_id) REFERENCES species(id) -- Establish a foreign key relationship to the species table
 );
 
 -- Create the visits table
