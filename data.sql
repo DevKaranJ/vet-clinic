@@ -29,6 +29,14 @@ INSERT INTO species (name) VALUES
 ('Pokemon'),
 ('Digimon');
 
+-- Update animals to include species_id value
+UPDATE animals
+SET species_id = CASE
+    WHEN name LIKE '%mon' THEN 2 -- If the name ends in "mon," it will be Digimon (species_id = 2)
+    ELSE 1 -- All other animals are Pokemon (species_id = 1)
+END;
+
+
 -- Sam Smith owns Agumon:
 UPDATE animals
 SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
