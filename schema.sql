@@ -80,12 +80,13 @@ CREATE TABLE specializations (
     FOREIGN KEY (species_id) REFERENCES species(id) -- Establish a foreign key relationship to the species table
 );
 
--- Create the visits table
+-- Create the visits table with the correct structure
 CREATE TABLE visits (
-    animal varchar(255),
+    animal_id integer, -- Add a foreign key reference to the animals table
     vet_id integer,
     visit_date date,
-    FOREIGN KEY (vet_id) REFERENCES vets(id)
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (animal_id) REFERENCES animals(id) -- Establish a foreign key relationship to the animals table
 );
 
 
