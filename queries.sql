@@ -100,44 +100,45 @@ GROUP BY species;
 
 
 -- What animals belong to Melody Pond?
-SELECT name
-FROM animals
-WHERE owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond');
+SELECT a.name
+FROM animals a
+JOIN owners o ON a.owner_id = o.id
+WHERE o.full_name = 'Melody Pond';
 
 -- List of all animals that are Pokemon (their type is Pokemon).
-SELECT name
-FROM animals
-WHERE species_id = (SELECT id FROM species WHERE name = 'Pokemon');
+SELECT a.name
+FROM animals a
+JOIN species s ON a.species_id = s.id
+WHERE s.name = 'Pokemon';
 
--- List all owners and their animals, including those that don't own any animal.
-SELECT o.full_name, a.name
+-- List all owners and their animals, remember to include those that don't own any animal.
+SELECT o.full_name, COALESCE(a.name, 'No animals owned') AS owned_animals
 FROM owners o
 LEFT JOIN animals a ON o.id = a.owner_id;
 
 -- How many animals are there per species?
-SELECT s.name AS species, COUNT(*) AS count
-FROM animals a
-JOIN species s ON a.species_id = s.id
+SELECT s.name AS species, COUNT(a.id) AS num_animals
+FROM species s
+LEFT JOIN animals a ON s.id = a.species_id
 GROUP BY s.name;
 
 -- List all Digimon owned by Jennifer Orwell.
 SELECT a.name
 FROM animals a
+JOIN species s ON a.species_id = s.id
 JOIN owners o ON a.owner_id = o.id
-WHERE o.full_name = 'Jennifer Orwell'
-AND a.species_id = (SELECT id FROM species WHERE name = 'Digimon');
+WHERE s.name = 'Digimon' AND o.full_name = 'Jennifer Orwell';
 
 -- List all animals owned by Dean Winchester that haven't tried to escape.
-SELECT name
-FROM animals
-WHERE owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
-AND escape_attempts = 0;
+SELECT a.name
+FROM animals a
+JOIN owners o ON a.owner_id = o.id
+WHERE o.full_name = 'Dean Winchester';
 
 -- Who owns the most animals?
-SELECT o.full_name, COUNT(*) AS count
+SELECT o.full_name, COUNT(a.id) AS num_animals_owned
 FROM owners o
 LEFT JOIN animals a ON o.id = a.owner_id
 GROUP BY o.full_name
-ORDER BY count DESC
+ORDER BY num_animals_owned DESC
 LIMIT 1;
-
